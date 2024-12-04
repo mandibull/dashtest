@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" mediaPresentationDuration="PT1H42M52.000S" maxSegmentDuration="PT2.000S" minBufferTime="PT2.000S">
+  <BaseURL>https://epic-developer-community.qstv.on.epicgames.com/81448c8b-12b6-448e-8b6a-f32f9355fe37/</BaseURL>
+  <ProgramInformation></ProgramInformation>
+  <Period id="0" start="PT0S">
+    <AdaptationSet id="0" contentType="video" lang="eng" par="16:9" maxWidth="1920" maxHeight="1080" frameRate="30/1" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true">
+      <Representation id="0" bandwidth="2750000" width="1152" height="648" sar="1:1" mimeType="video/mp4" codecs="avc1.64001f">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+      <Representation id="1" bandwidth="6000000" width="1920" height="1080" sar="1:1" mimeType="video/mp4" codecs="avc1.640028">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+      <Representation id="2" bandwidth="4000000" width="1280" height="720" sar="1:1" mimeType="video/mp4" codecs="avc1.64001f">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+      <Representation id="3" bandwidth="1250000" width="896" height="504" sar="1:1" mimeType="video/mp4" codecs="avc1.64001f">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+      <Representation id="4" bandwidth="750000" width="640" height="360" sar="1:1" mimeType="video/mp4" codecs="avc1.64001e">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+      <Representation id="5" bandwidth="500000" width="512" height="288" sar="1:1" mimeType="video/mp4" codecs="avc1.640015">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" lang="eng" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true">
+      <Representation id="6" audioSamplingRate="44100" bandwidth="128000" mimeType="audio/mp4" codecs="mp4a.40.2">
+        <SegmentTemplate duration="2000000" timescale="1000000" initialization="init_$RepresentationID$.mp4" media="segment_$RepresentationID$_$Number$.m4s" startNumber="1"></SegmentTemplate>
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"></AudioChannelConfiguration>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
